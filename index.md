@@ -1,6 +1,9 @@
 # CS-499 Computer Science Capstone
 
+<p align="center">
 Final Project Portfolio
+</p>
+
 
 ## Professional Self-Assessment
 
@@ -12,3 +15,9 @@ Final Project Portfolio
   
 ### Project Links
 [Code Review](code-review.md)
+
+[Software Design and Engineering Enhancement](enhancement-one.md)
+
+[Algorithms and Data Structures Enhancement](enhancement-two.md)
+
+[Database Enhancement](enhancement-three.md)
