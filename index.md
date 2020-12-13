@@ -11,4 +11,4 @@ Final Project Portfolio
   Much of my work has been writing intensive which has allowed me to develop my communication skills. My work regarding data structures and algorithms has included, storing, traversing, sorting, and searching for information. As part of my portfolio, I developed a weather station that follows an algorithm to monitor, calculate, and store weather information. During my coursework, I have designed and written Android applications. My portfolio features an Android application that is designed as a coffee shop ordering tool. The enhancements for my portfolio included re-designing the user interface and adding a quantity selection when ordering using SQLite. In addition to these skills, I have worked on reverse engineering a binary file and recreating the program in C. Throughout all of these programming projects and exercises secure programming practices have been emphasized.
   
 ### Project Links
-[Code Review] (code-review.md)
+[Code Review](code-review.md)
