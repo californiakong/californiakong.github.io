@@ -1,6 +1,7 @@
 package com.cs360.brycezimbelman.mochamoment;
 
  class Espresso {
+     // Initialize variables
     private String var_espresso;
     private String var_price;
     private String var_type;
@@ -11,6 +12,7 @@ package com.cs360.brycezimbelman.mochamoment;
 
     }
 
+    // Sets up database entries
     public Espresso(String espresso, String price, String type ,String user, String quantity) {
         this.var_espresso = espresso;
         this.var_price = price;
@@ -20,18 +22,10 @@ package com.cs360.brycezimbelman.mochamoment;
     }
 
 
+    // Sets data into database
     void setEspresso(String espresso) { this.var_espresso = espresso;}
-    void setPrice(String price) {
-        this.var_price = price;
-    }
-    void setType(String type) {
-        this.var_type = type;
-    }
-    void setUser(String user) {
-        this.var_user = user;
-    }
-    void setQuantity(String quantity) { this.var_quantity = quantity; }
 
+    // Returns database results
     String getEspresso() { return this.var_espresso; }
     String getPrice() {
         return this.var_price;

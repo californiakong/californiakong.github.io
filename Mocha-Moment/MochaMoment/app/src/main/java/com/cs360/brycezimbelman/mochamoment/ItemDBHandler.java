@@ -7,6 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class ItemDBHandler extends SQLiteOpenHelper {
+    // Initialize variables
     private static final int DB_VER = 1;
     private static final String DB_NAME = "orderDB.db";
 
@@ -23,6 +24,7 @@ public class ItemDBHandler extends SQLiteOpenHelper {
         super(context, DB_NAME, factory, DB_VER);
     }
 
+    // Initialize SQL Table
     @Override
     public void onCreate(SQLiteDatabase db) {
         String CREATE_ORDER_TABLE = "CREATE TABLE " + TABLE_ORDER + "(" + COLUMN_ID + " INTEGER PRIMARY KEY," + COLUMN_ITEM + " TEXT," + COLUMN_PRICE + " TEXT," + COLUMN_TYPE + " TEXT," + COLUMN_USER + " TEXT," + COLUMN_QUANTITY + " TEXT" + ")";
@@ -80,7 +82,7 @@ public class ItemDBHandler extends SQLiteOpenHelper {
         db.close();
     }
 
-    // Implements read feature
+    // Implements read feature for espresso
     String readEspresso(String itemName) {
         String query = "SELECT * FROM " + TABLE_ORDER + " WHERE " + COLUMN_ITEM + " = \"" + itemName + "\"";
         String espressoQuantity;
@@ -101,6 +103,7 @@ public class ItemDBHandler extends SQLiteOpenHelper {
         return espressoQuantity;
     }
 
+    // Implements read feature for frost
     String readFrost(String itemName) {
         String query = "SELECT * FROM " + TABLE_ORDER + " WHERE " + COLUMN_ITEM + " = \"" + itemName + "\"";
         String frostQuantity;
@@ -121,6 +124,7 @@ public class ItemDBHandler extends SQLiteOpenHelper {
         return frostQuantity;
     }
 
+    // Implements read feature for espresso for mocha
     String readMocha(String itemName) {
         String query = "SELECT * FROM " + TABLE_ORDER + " WHERE " + COLUMN_ITEM + " = \"" + itemName + "\"";
         String mochaQuantity;
@@ -141,7 +145,7 @@ public class ItemDBHandler extends SQLiteOpenHelper {
         return mochaQuantity;
     }
 
-    // Implements the delete feature
+    // Implements delete feature for espresso
     boolean deleteEspresso(String itemName) {
         boolean result = false;
 
@@ -166,6 +170,7 @@ public class ItemDBHandler extends SQLiteOpenHelper {
         return result;
     }
 
+    // Implements delete feature for frost
     boolean deleteFrost(String itemName) {
         boolean result = false;
 
@@ -190,6 +195,7 @@ public class ItemDBHandler extends SQLiteOpenHelper {
         return result;
     }
 
+    // Implements delete feature for mocha
     boolean deleteMocha(String itemName) {
         boolean result = false;
 

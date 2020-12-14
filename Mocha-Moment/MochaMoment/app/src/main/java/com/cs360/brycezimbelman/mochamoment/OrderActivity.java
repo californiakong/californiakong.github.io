@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -37,6 +38,18 @@ public class OrderActivity extends AppCompatActivity {
 
     // add espresso to order
     public void addEspresso(View view) {
+        // Checks if name is given
+        if (nameBox.getText().toString().isEmpty()) {
+            Toast.makeText(OrderActivity.this, "Add name to order", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        // Checks if quantity given
+        if (espressoQuantityBox.getText().toString().isEmpty()) {
+            Toast.makeText(OrderActivity.this, "Add quantity to order", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         ItemDBHandler dbHandler = new ItemDBHandler(this, null);
         String orderEspresso = "Espresso";
         String espressoPrice = "$3.99";
@@ -50,6 +63,18 @@ public class OrderActivity extends AppCompatActivity {
 
     // add frost to order
     public void addFrost(View view) {
+        // Checks if name is given
+        if (nameBox.getText().toString().isEmpty()) {
+            Toast.makeText(OrderActivity.this, "Add name to order", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        // Checks if quantity given
+        if (frostQuantityBox.getText().toString().isEmpty()) {
+            Toast.makeText(OrderActivity.this, "Add quantity to order", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         ItemDBHandler dbHandler = new ItemDBHandler(this, null);
         String orderFrost = "Frost";
         String frostPrice = "$3.99";
@@ -62,6 +87,18 @@ public class OrderActivity extends AppCompatActivity {
 
     // add mocha to order
     public void addMocha(View view) {
+        // Checks if name is given
+            if (nameBox.getText().toString().isEmpty()) {
+                Toast.makeText(OrderActivity.this, "Add name to order", Toast.LENGTH_SHORT).show();
+                return;
+        }
+
+        // Checks if quantity given
+        if (mochaQuantityBox.getText().toString().isEmpty()) {
+            Toast.makeText(OrderActivity.this, "Add quantity to order", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         ItemDBHandler dbHandler = new ItemDBHandler(this, null);
         String orderMocha = "Mocha";
         String mochaPrice = "$4.99";

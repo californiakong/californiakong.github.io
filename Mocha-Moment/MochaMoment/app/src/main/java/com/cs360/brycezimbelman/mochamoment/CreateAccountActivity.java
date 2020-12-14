@@ -38,6 +38,19 @@ public class CreateAccountActivity extends AppCompatActivity {
                 EditText newUsername = findViewById(R.id.create_username);
                 // Initialize password EditText to retrieve password
                 EditText newPassword = findViewById(R.id.create_password);
+
+                // Checks if username is entered
+                if (newUsername.getText().toString().isEmpty()) {
+                    Toast.makeText(CreateAccountActivity.this, "Enter valid username", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                // Checks if password is entered
+                if(newPassword.getText().toString().isEmpty()) {
+                    Toast.makeText(CreateAccountActivity.this, "Enter valid password", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 Context context = CreateAccountActivity.this;
                 // Initialize preferences
                 SharedPreferences sharedPref = context.getSharedPreferences(

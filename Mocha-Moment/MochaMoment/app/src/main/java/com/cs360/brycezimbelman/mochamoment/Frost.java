@@ -1,6 +1,7 @@
 package com.cs360.brycezimbelman.mochamoment;
 
 public class Frost {
+    // Initialize variables
     private String var_frost;
     private String var_price;
     private String var_type;
@@ -11,6 +12,7 @@ public class Frost {
 
     }
 
+    // Sets up database entries
     public Frost( String frost, String price, String type, String user, String quantity) {
         this.var_frost = frost;
         this.var_price = price;
@@ -20,20 +22,10 @@ public class Frost {
     }
 
 
+    // Sets data into database
     void setFrost(String frost) { this.var_frost = frost;}
-    void setPrice(String price) {
-        this.var_price = price;
-    }
-    public void setType(String type) {
-        this.var_type = type;
-    }
-    public void setUser(String user) {
-        this.var_user = user;
-    }
-    public void setQuantity(String quantity) {
-        this.var_quantity = quantity;
-    }
 
+    // Returns database results
     String getFrost() { return this.var_frost; }
     String getPrice() {
         return this.var_price;
