@@ -1,4 +1,4 @@
-# Bryce Zimbelman Portfolio
+# Bryce Zimbelman's Portfolio
 
   Throughout my programming experience I have learned about databases, software engineering, and algorithms. I have been able to gain valuable experience in these areas of computer science. I have learned about database design including how to manage and store information in an SQL or NoSQL database. I have learned about developing API’s and designing a software project. I have worked in collaboration with other students using Git. Team participation was required as well as the successful management of a group Git project.
   
