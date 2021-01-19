@@ -1,9 +1,4 @@
-# CS-499 Computer Science Capstone
-
-<p align="center">
-Final Project Portfolio
-</p>
-
+# Bryce Zimbelman Portfolio
 
 ## Professional Self-Assessment
 
