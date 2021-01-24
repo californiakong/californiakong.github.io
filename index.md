@@ -8,10 +8,10 @@
   
 ### Project Links
 
+[GitHub Portfolio Repository](https://github.com/californiakong/californiakong.github.io)
+
 [Software Design and Engineering Enhancement](enhancement-one.md)
 
 [Algorithms and Data Structures Enhancement](enhancement-two.md)
 
 [Database Enhancement](enhancement-three.md)
-
-[GitHub Portfolio Repository](https://github.com/californiakong/californiakong.github.io)
