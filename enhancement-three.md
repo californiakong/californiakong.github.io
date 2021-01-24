@@ -1,8 +1,4 @@
-# CS-499 Computer Science Capstone
-
-<p align="center">
-Final Project Portfolio
-</p>
+# Bryce Zimbelman's Portfolio
 
 ## Databases
 
